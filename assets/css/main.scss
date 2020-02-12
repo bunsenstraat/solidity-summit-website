@@ -4,16 +4,25 @@
 
 
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: rgb(46, 54, 77) !important;
 
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  padding: 89px 0 0 0;
-
-  display: none;
+  
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
+  overflow-x: hidden; //horizontal
 
 
+
+
+}
+
+
+
+
+.jumbotron h1 {
+  color:#2980B9;
+}
+
+.jumbotron p {
+  color:#7d7d7d;
 }
 
 .wait-for-icons {
@@ -120,6 +129,9 @@ p {
   justify-content: flex-start;
 }
 
+.topic {
+  color: #2096f3;
+}
 
 .gallery_card h4 {
   color: #2096f3;

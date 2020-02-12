@@ -1,7 +1,10 @@
 $(document).ready(function () {
 
-  $('body').css('display', 'none');
-  $('body').fadeIn(500);
+  //$('body').css('display', 'none');
+  //$('body').fadeIn(500);
+
+
+
 
   $(".owl-carousel").owlCarousel({
     "items": 1,
