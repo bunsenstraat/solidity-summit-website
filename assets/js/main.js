@@ -5,10 +5,11 @@ $(document).ready(function () {
 
   const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-  
+  const gl = document.createElement("canvas").getContext("webgl2");
+  console.log(gl);
 
   const heart = new NextParticle({
-    renderer: 'webgl',
+    renderer: gl?'webgl':'',
     image: document.querySelector('.logo'),
     width:350,
     height:350,
@@ -20,11 +21,11 @@ $(document).ready(function () {
     initDirection:'none',
     noise:20,
     initPosition:'none',
-    fadePosition:'random'
+    fadePosition:'random',
   });
 
   const heartsmall = new NextParticle({
-    renderer: isMobile?'':'webgl',
+    renderer: gl?'webgl':'',
     image: document.querySelector('.logo-small'),
     width:350,
     height:350,
