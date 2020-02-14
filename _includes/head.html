@@ -5,15 +5,13 @@
 
   {% if page.title %}
   <title>{{page.title}}</title>
-  {% else %}
-  <title>{{site.title}}</title>
   {% endif %}
 
   <meta charset="utf-8" / />
 
   <meta property="og:url" content="{{site.url}}{{page.url}}" />
 
-  <meta content="{{ site.title }}" property="og:site_name">
+  <meta content="{{ page.title }}" property="og:site_name">
   {% if page.type %}
     <meta content="{{ page.type }}" property="og:type">
   {% else %}
@@ -21,8 +19,6 @@
   {% endif %}
   {% if page.title %}
     <meta content="{{ page.title }}" property="og:title">
-  {% else %}
-    <meta content="{{ site.title }}" property="og:title">
   {% endif %}
   {% if page.share %}
     <meta content="{{ page.share }}" property="og:description">
@@ -31,8 +27,6 @@
   {% endif %}
   {% if page.image %}
     <meta content="{{ page.image }}" property="og:image">
-  {% else %}
-    <meta content="{{ site.image }}" property="og:image">
   {% endif %}
 
 
@@ -43,9 +37,6 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}" as="style" onload="this.rel='stylesheet'">
-<link rel="stylesheet" href="{{'/assets/OwlCarousel2-2.3.4%202/dist/assets/owl.carousel.min.css' | absolute_url }}">
-<link rel="stylesheet" href="{{'/assets/OwlCarousel2-2.3.4%202/dist/assets/owl.theme.default.min.css' | absolute_url }}">
-
 
   <!--  Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="https://remix.ethereum.org/icon.png">

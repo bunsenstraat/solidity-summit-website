@@ -4,15 +4,6 @@ $(document).ready(function () {
   //$('body').fadeIn(500);
 
 
-
-
-  $(".owl-carousel").owlCarousel({
-    "items": 1,
-    "autoplay": true,
-    "dots": true,
-    "loop": true
-  });
-
   // animating anchors
   $('a[href*="#"]')
     // Remove links that don't actually link to anything

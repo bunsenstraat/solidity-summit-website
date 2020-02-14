@@ -1,20 +1,99 @@
 ---
 ---
-@import 'team';
 
+
+@font-face {
+  font-family: 'SF Mono Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SF Mono Regular'), url('/assets/fonts/SFMonoRegular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Menlo Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Menlo Regular'), url('/assets/fonts/Menlo-Regular.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Monaco';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Monaco'), url('/assets/fonts/Monaco.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Consolas';
+      font-style: normal;
+      font-weight: normal;
+      src: local('Monaco'), url('/assets/fonts/Consolas.woff') format('woff');
+      }
 
 body {
-
-  
-  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
+  font-family: 'SF Mono Regular','Menlo Regular','Monaco',"Consolas","Liberation Mono","Courier New",Courier,monospace;
   overflow-x: hidden; //horizontal
-
-
-
-
+  
 }
 
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .c-large{
+    display: none;
+  };  
+  .c-medium{
+    display: none;
+  }; 
+  .c-small{
+    display: block;
+  }; 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .c-large{
+    display: none;
+  };  
+  .c-medium{
+    display: none;
+  }; 
+  .c-small{
+    display: block;
+  }; 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .c-large{
+    display: none;
+  };  
+  .c-medium{
+    display: block;
+  }; 
+  .c-small{
+    display: none;
+  }; 
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1200px) {
+  .c-large{
+    display: block;
+  };  
+  .c-medium{
+    display: none;
+  }; 
+  .c-small{
+    display: none;
+  }; 
+}
+
+
+
+
+.alright{
+  text-align: right;;
+}
 
 
 .jumbotron h1 {
